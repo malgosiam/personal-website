@@ -1,12 +1,94 @@
 * {
   box-sizing: border-box;
+  _border: 1px solid rgb(46, 40, 41);
 }
 
 body {
-  margin: 0px;
-  background-color: aqua;
+  padding: 30px;
+  background-color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.header {
+  padding: 0px;
+  width: 100vw;
+  color: black;
+  background-color: rgb(231, 229, 229);
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+figure {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.interests li::before {
+  content: "💟";
+  padding-right: 10px;
+  filter: saturate(0%);
+}
+
+.links {
+  font-size: large;
+  display: flex;
+  align-items: stretch;
   justify-content: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 100px;
+  gap: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a[href^="https"] {
+  color: black;
+}
+
+a[href^="https"]:hover {
+  background-color: rgb(212, 206, 206);
+  color: white;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+.box {
+  flex-grow: 1;
+  display: flex;
+  transition: all 0.15s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  z-index: 10;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 5px 10px 0 rgb(240, 238, 238);
+  border: 0;
 }

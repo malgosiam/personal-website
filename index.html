@@ -9,22 +9,23 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h1>Malgorzata Wawrzyniak</h1>
-        <ul>
+      <h1>Malgorzata Wawrzyniak</h1>
+      <nav class="header">
+        <figure>
+          <img src="assets/photo.jpeg" alt="My photo" width="200px" />
+          <figcaption>Hello there!</figcaption>
+        </figure>
+
+        <ul class="navigation" role="list">
           <li><a href="#contact">Contact</a></li>
           <li><a href="#biography">Biography</a></li>
         </ul>
       </nav>
-
-      <figure>
-        <img src="assets/photo.jpeg" alt="My photo" width="200px" />
-      </figure>
     </header>
     <main>
-      <section id="interests">
+      <section>
         <h3>Interests</h3>
-        <ul>
+        <ul class="interests" role="list">
           <li>Coding</li>
           <li>Design</li>
           <li>Architecture</li>
@@ -35,11 +36,17 @@
         <h3>Contact</h3>
         <p>malgosia.archi@gmail.com</p>
       </section>
+      <h3>Find me here:</h3>
+      <section class="links">
+        <a class="box" href="https://github.com/malgosiam" alt="Github link"
+          >Github</a
+        >
 
-      <section>
-        <a href="https://github.com/malgosiam" alt="Github link">Github</a>
-        <a href="https://codepen.io/mGosia" alt="Codepen link">Codepen</a>
+        <a class="box" href="https://codepen.io/mGosia" alt="Codepen link"
+          >Codepen</a
+        >
         <a
+          class="box"
           href="https://www.linkedin.com/in/malgorzatawawrz/?locale=en_US"
           alt="Linkedin link"
           >Linkedin</a
@@ -61,7 +68,21 @@
       <section id="cv">
         <h3>CV</h3>
         <article>
-          <ul></ul>
+          <ul>
+            <li>2023 - Web Development student at neuefische gmbH</li>
+            <li>
+              2022-2019 - Bim Coordinator at Renner Hainke Wirth Zirn Architeken
+            </li>
+            <li>
+              2019-2014 - Architect at Renner Hainke Wirth Zirn Architeken
+            </li>
+            <li>
+              2013-2008 - Master and Bachelor of Architecture - Architecture and
+              Urban planning - Poznan University of Technology
+            </li>
+            <li>2013-2012 - exchange student - University of Ljubljana</li>
+            <li>2012 - Architect Assistant at Guallart Architects</li>
+          </ul>
         </article>
       </section>
     </main>
